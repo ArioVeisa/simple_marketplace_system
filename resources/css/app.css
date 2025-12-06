@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+    body {
+        @apply font-sans antialiased;
+    }
+    
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        @apply bg-dark-900;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        @apply bg-dark-600 rounded-full;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-dark-500;
+    }
+}
+
+@layer components {
+    /* Glass Card Effect */
+    .glass-card {
+        @apply bg-dark-800/80 backdrop-blur-xl border border-dark-600/50 rounded-2xl shadow-card;
+    }
+    
+    .glass-card-hover {
+        @apply glass-card transition-all duration-300 hover:border-accent/30 hover:shadow-glow-sm;
+    }
+    
+    /* Modern Input Styling */
+    .input-dark {
+        @apply bg-dark-800 border-dark-600 text-dark-100 rounded-xl 
+               focus:border-accent focus:ring-accent/30 focus:ring-2
+               placeholder:text-dark-500 transition-all duration-300;
+    }
+    
+    /* Primary Button */
+    .btn-primary {
+        @apply bg-gradient-to-r from-accent to-accent-light text-dark-900 font-semibold 
+               px-6 py-3 rounded-xl shadow-glow-sm
+               hover:shadow-glow hover:scale-[1.02] 
+               active:scale-[0.98] transition-all duration-300;
+    }
+    
+    /* Secondary Button */
+    .btn-secondary {
+        @apply bg-dark-700 text-dark-100 font-medium 
+               px-6 py-3 rounded-xl border border-dark-600
+               hover:bg-dark-600 hover:border-dark-500 
+               transition-all duration-300;
+    }
+    
+    /* Danger Button */
+    .btn-danger {
+        @apply bg-red-500/20 text-red-400 font-medium 
+               px-4 py-2 rounded-xl border border-red-500/30
+               hover:bg-red-500/30 hover:border-red-500/50 
+               transition-all duration-300;
+    }
+    
+    /* Success Badge */
+    .badge-success {
+        @apply bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full text-sm font-medium;
+    }
+    
+    /* Warning Badge */
+    .badge-warning {
+        @apply bg-amber-500/20 text-amber-400 px-3 py-1 rounded-full text-sm font-medium;
+    }
+    
+    /* Info Badge */
+    .badge-info {
+        @apply bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm font-medium;
+    }
+    
+    /* Table Styling */
+    .table-dark {
+        @apply w-full text-left;
+    }
+    
+    .table-dark thead {
+        @apply border-b border-dark-600;
+    }
+    
+    .table-dark th {
+        @apply px-6 py-4 text-dark-400 text-sm font-semibold uppercase tracking-wider;
+    }
+    
+    .table-dark td {
+        @apply px-6 py-4 text-dark-200 border-b border-dark-700/50;
+    }
+    
+    .table-dark tbody tr {
+        @apply transition-colors duration-200 hover:bg-dark-700/30;
+    }
+    
+    /* Sidebar Navigation */
+    .nav-link {
+        @apply flex items-center gap-3 px-4 py-3 text-dark-400 rounded-xl
+               transition-all duration-200;
+    }
+    
+    .nav-link:hover {
+        @apply bg-dark-700/50 text-dark-100;
+    }
+    
+    .nav-link.active {
+        @apply bg-accent/10 text-accent border-l-2 border-accent;
+    }
+    
+    /* Stats Card */
+    .stats-card {
+        @apply glass-card p-6 relative overflow-hidden;
+    }
+    
+    .stats-card::before {
+        content: '';
+        @apply absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2;
+    }
+    
+    /* Alert Boxes */
+    .alert-success {
+        @apply bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-3 rounded-xl;
+    }
+    
+    .alert-error {
+        @apply bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-3 rounded-xl;
+    }
+    
+    .alert-warning {
+        @apply bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-3 rounded-xl;
+    }
+}
+
+@layer utilities {
+    /* Text Gradient */
+    .text-gradient {
+        @apply bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent;
+    }
+    
+    /* Animate on scroll */
+    .animate-on-scroll {
+        @apply opacity-0 translate-y-8 transition-all duration-700;
+    }
+    
+    .animate-on-scroll.visible {
+        @apply opacity-100 translate-y-0;
+    }
+}
