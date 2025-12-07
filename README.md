@@ -774,30 +774,6 @@ php artisan view:clear
 
 ---
 
-## Notes
-
-### Regarding API Requirements
-**Q: "The requirement uses API but we only have a few endpoints, is that okay?"**
-
-**A:** Yes, it's perfectly fine! The current API implementation covers the essential marketplace operations:
-- **Product Browsing** (GET /api/products, GET /api/products/{id})
-- **Transaction Management** (GET /api/transactions, POST /api/transactions)
-
-This minimal API follows REST principles and provides the core functionality needed for a simple marketplace. If you need additional endpoints in the future (e.g., user registration, product search, cart management), they can be easily added following the same pattern.
-
-### Production Checklist
-Before deploying to production:
-- [ ] Change default user passwords
-- [ ] Configure Google OAuth credentials
-- [ ] Set up SMTP for email notifications
-- [ ] Switch `APP_ENV` to `production`
-- [ ] Set `APP_DEBUG` to `false`
-- [ ] Configure SSL/TLS for HTTPS
-- [ ] Set up proper database backups
-- [ ] Review and adjust rate limiting
-
----
-
 ## License
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
