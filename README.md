@@ -57,7 +57,7 @@ The project was built to satisfy specific requirements including full CRUD opera
 ### Setup Steps
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ArioVeisa/simple_marketplace_system.git
    cd simple_marketplace_system
    ```
 
