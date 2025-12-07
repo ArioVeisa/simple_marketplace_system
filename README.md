@@ -66,23 +66,23 @@ Ensure you have the following installed:
 
 ### Step-by-Step Setup
 
-#### 1️⃣ Clone the Repository
+#### Clone the Repository
 ```bash
 git clone https://github.com/ArioVeisa/simple_marketplace_system.git
 cd simple_marketplace_system
 ```
 
-#### 2️⃣ Install PHP Dependencies
+#### Install PHP Dependencies
 ```bash
 composer install
 ```
 
-#### 3️⃣ Install JavaScript Dependencies
+#### Install JavaScript Dependencies
 ```bash
 npm install
 ```
 
-#### 4️⃣ Environment Configuration
+#### Environment Configuration
 Create your `.env` file from the example:
 ```bash
 cp .env.example .env
@@ -130,7 +130,7 @@ MAIL_FROM_ADDRESS=your_email@gmail.com
 MAIL_FROM_NAME="${APP_NAME}"
 ```
 
-#### 5️⃣ Database Setup
+#### Database Setup
 If using SQLite, create the database file:
 ```bash
 touch database/database.sqlite
@@ -146,7 +146,7 @@ This will:
 - Generate default roles (Admin, Customer)
 - Create test users and sample products
 
-#### 6️⃣ Build Frontend Assets
+#### Build Frontend Assets
 For development:
 ```bash
 npm run dev
@@ -157,18 +157,16 @@ For production:
 npm run build
 ```
 
-#### 7️⃣ Start the Application
+#### Start the Application
 ```bash
 php artisan serve
 ```
 
 The application will be available at: **http://localhost:8000**
 
-### 🎉 Installation Complete!
-
 ---
 
-## 🔐 Default Credentials
+## Default Credentials
 
 After seeding, use these credentials to test the application:
 
