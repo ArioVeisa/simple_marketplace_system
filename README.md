@@ -4,7 +4,7 @@ A robust marketplace platform built with **Laravel 12** that facilitates interac
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 - [Tech Stack](#-tech-stack)
 - [Features](#-features)
 - [Installation](#-installation)
@@ -14,7 +14,7 @@ A robust marketplace platform built with **Laravel 12** that facilitates interac
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework**: Laravel 12
 - **Language**: PHP 8.2+
@@ -32,7 +32,7 @@ A robust marketplace platform built with **Laravel 12** that facilitates interac
 
 ---
 
-## ✨ Features
+## Features
 
 ### User Roles & Permissions
 #### Admin
@@ -48,14 +48,14 @@ A robust marketplace platform built with **Laravel 12** that facilitates interac
 - View order history
 
 ### Bonus Features
-- ✅ **Role-Based Middleware**: Restrict `/admin/*` routes to admins only
-- ✅ **Google SSO**: OAuth login with automatic customer role assignment
-- ✅ **Advanced Reporting**: Export data as PDF or Excel
-- ✅ **Email Notifications**: Automated emails for new orders via SMTP
+- **Role-Based Middleware**: Restrict `/admin/*` routes to admins only
+- **Google SSO**: OAuth login with automatic customer role assignment
+- **Advanced Reporting**: Export data as PDF or Excel
+- **Email Notifications**: Automated emails for new orders via SMTP
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 Ensure you have the following installed:
@@ -181,7 +181,7 @@ After seeding, use these credentials to test the application:
 
 ---
 
-## 📡 API Documentation
+## API Documentation
 
 ### Base URL
 ```
@@ -234,7 +234,7 @@ echo $token;
 
 ---
 
-## 📍 API Endpoints Reference
+## API Endpoints Reference
 
 ### 1. Login
 Authenticate and receive an API token.
@@ -647,7 +647,7 @@ curl -X GET "http://localhost:8000/api/user" \
 
 ---
 
-## 📊 Postman Collection
+## Postman Collection
 
 A ready-to-use Postman collection is included: **`Simple_Marketplace_API.postman_collection.json`**
 
@@ -660,9 +660,9 @@ A ready-to-use Postman collection is included: **`Simple_Marketplace_API.postman
 
 ### Features
 
-✅ **Auto-save Token**: Login request automatically saves the token to collection variables  
-✅ **Pre-configured Endpoints**: All 6 API endpoints ready to test  
-✅ **Environment Variables**: Uses `{{base_url}}` and `{{api_token}}`
+**Auto-save Token**: Login request automatically saves the token to collection variables  
+**Pre-configured Endpoints**: All 6 API endpoints ready to test  
+**Environment Variables**: Uses `{{base_url}}` and `{{api_token}}`
 
 ### Quick Start
 
@@ -672,18 +672,18 @@ A ready-to-use Postman collection is included: **`Simple_Marketplace_API.postman
 
 2. **Login to get token**:
    - Run `Authentication → Login` request
-   - Token automatically saved! ✨
+   - Token automatically saved! 
 
 3. **Test other endpoints**:
    - All authenticated endpoints will use the saved token automatically
 
 ### Example Requests
 
-1. **Login** ⭐
+1. **Login** 
    - Method: POST
    - URL: `{{base_url}}/api/login`
    - Body: `{"email": "customer@example.com", "password": "password"}`
-   - 🔥 Token auto-saved after successful login!
+   - Token auto-saved after successful login!
 
 2. **Get All Products**
    - Method: GET
@@ -717,7 +717,7 @@ A ready-to-use Postman collection is included: **`Simple_Marketplace_API.postman
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 simple_marketplace_system/
@@ -747,7 +747,7 @@ simple_marketplace_system/
 
 ---
 
-## 🛠️ Development
+## Development
 
 ### Run Development Server
 ```bash
@@ -774,7 +774,7 @@ php artisan view:clear
 
 ---
 
-## 📝 Notes
+## Notes
 
 ### Regarding API Requirements
 **Q: "The requirement uses API but we only have a few endpoints, is that okay?"**
@@ -798,10 +798,10 @@ Before deploying to production:
 
 ---
 
-## 📄 License
+## License
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ---
 
-## 🤝 Support
+## Support
 For issues, questions, or contributions, please create an issue in the repository.
