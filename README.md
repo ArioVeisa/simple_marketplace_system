@@ -68,7 +68,7 @@ Ensure you have the following installed:
 
 #### 1️⃣ Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/ArioVeisa/simple_marketplace_system.git
 cd simple_marketplace_system
 ```
 
